@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Dugg_IN2000" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryVariant">@color/purple_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple</item>
+        <item name="colorSecondaryVariant">@color/purple_light</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/dark_gray</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/sea_grey</item>
+    </style>
+
+
+    <!-- Toolbarstyle -->
+    <style name="Theme.Dugg_IN2000_ToolbarColor" parent="Theme.AppCompat">
+        <item name="android:background">@color/ekstra_dark_gray</item>
+    </style>
+
+    <!-- Style for knappene i bottom toolbar når de ikke er klikket -->
+    <style name="Theme.Dugg_IN2000_KartButton" parent="Theme.AppCompat">
+        <item name="android:src">@drawable/ic_kart_night</item>
+    </style>
+    <style name="Theme.Dugg_IN2000_FareButton" parent="Theme.AppCompat">
+        <item name="android:src">@drawable/ic_fare_night</item>
+    </style>
+    <style name="Theme.Dugg_IN2000_LagretButton" parent="Theme.AppCompat">
+        <item name="android:src">@drawable/ic_lagret_night</item>
+    </style>
+    <style name="Theme.Dugg_IN2000_WeatherButton" parent="Theme.AppCompat">
+        <item name="android:src">@drawable/ic_weather_night</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000_ModeColor" parent="Theme.AppCompat">
+        <item name="android:background">@color/purple</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000_RoundToolbar" parent="Theme.AppCompat">
+        <item name="android:background">@drawable/nav_background_night</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000.SpinnerStyle" parent="Theme.AppCompat">
+        <item name="android:popupBackground">@color/ekstra_dark_gray</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000.FragmentBakgrunn" parent="Theme.AppCompat">
+        <item name="android:background">@color/dark_gray</item>
+    </style>
+</resources>

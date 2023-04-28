@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Dugg_IN2000" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/orange_light</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple</item>
+        <item name="colorSecondaryVariant">@color/purple_light</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorSecondary">@color/sea_grey</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000_ToolbarColor" parent="Theme.AppCompat">
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <!-- Style for knappene i bottom toolbar når de ikke er klikket -->
+    <style name="Theme.Dugg_IN2000_KartButton" parent="Theme.AppCompat">
+        <item name="android:src">@drawable/ic_kart_knapp</item>
+    </style>
+    <style name="Theme.Dugg_IN2000_FareButton" parent="Theme.AppCompat">
+        <item name="android:src">@drawable/ic_farer_knapp</item>
+    </style>
+    <style name="Theme.Dugg_IN2000_LagretButton" parent="Theme.AppCompat">
+        <item name="android:src">@drawable/ic_lagret_knapp</item>
+    </style>
+    <style name="Theme.Dugg_IN2000_WeatherButton" parent="Theme.AppCompat">
+        <item name="android:src">@drawable/ic_weatherdata_knapp</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000_ModeColor" parent="Theme.AppCompat">
+        <item name="android:background">@color/orange</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000_RoundToolbar" parent="Theme.AppCompat">
+        <item name="android:background">@drawable/nav_background</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000.SpinnerStyle" parent="Theme.AppCompat">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.Dugg_IN2000.FragmentBakgrunn" parent="Theme.AppCompat">
+        <item name="android:background">@color/white</item>
+    </style>
+
+</resources>

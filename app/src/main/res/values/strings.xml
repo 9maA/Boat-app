@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">KystVarsel</string>
+    <string name="search_text">Søk etter sted</string>
+    <string name="gi_tilgang">Gi tilgang</string>
+    <string name="inputText">Skriv navn på sted</string>
+    <string name="bKnappTekst">Bekreft</string>
+    <string name="nav_header_title">KystVarsel</string>
+    <string name="nav_header_subtitle">Varsler om farer langst kysten</string>
+    <string name="menu_home">Hjem</string>
+    <string name="menu_fareSymboler">Faresymboler</string>
+    <string name="menu_nodetater">Nødeater</string>
+    <string name="menu_lagetAv">Laget av</string>
+    <string name="lagre_sted">Vil du lagre stedet?</string>
+    <string name="ok">OK</string>
+    <string name="avbryt">AVBRYT</string>
+    <string name="sted_finnes">Stedet er allerede lagret i listen! Finn et annet sted!</string>
+    <string name="filter_baatklasse">filter_baatklasse</string>
+    <string name="tittel">tittel</string>
+    <string name="copyright">©Yr 2021\n©Metrologisk Institutt 2021</string>
+    <string name="laget_av">Laget av gruppe 14:\nMalin, Nima, Miriam, Habib, Daniel og Amadu.</string>
+    <string name="tekst_ikke_tilatt">Gi tilgang til din lokasjon for å kunne se temperatur!</string>
+    <string name="ingen_lagrede">Ingen lagrede lokasjoner! For å lagre en lokasjon:\n</string>
+    <string name="steg">Gå til kartet\nVelg et sted på kartet\nLegg til stedet</string>
+    <string name="ingen_farer">Det er ingen farer å vise i dag!</string>
+    <string name="ingen_bolge_hoyde">Bølgehøyde: N/A</string>
+    <string name="fare_bolge_hoyde">Farlig bølgehøyde for båt!</string>
+    <string name="steg1">1</string>
+    <string name="steg2">2</string>
+    <string name="steg3">3</string>
+    <string name="kart">Kart</string>
+    <string name="farer">Farer</string>
+    <string name="lagret">Lagrede</string>
+    <string name="weather">Vær</string>
+    <string name="weather_text">Vævarsel for din posisjon</string>
+    <string name="temp_text">Temperatur: </string>
+    <string name="skydekke">Skydekke</string>
+    <string name="fuktighet">Fuktighet</string>
+    <string name="taake">Tåke</string>
+    <string name="vindstyrke">Vindstyrke</string>
+
+    <string-array name="baatklasser">
+        <item>-VELG KLASSE-</item>
+        <item>Klasse A</item>
+        <item>Klasse B</item>
+        <item>Klasse C</item>
+        <item>Klasse D</item>
+    </string-array>
+</resources>

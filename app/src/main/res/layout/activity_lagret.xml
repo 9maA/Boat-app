@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/constraintLayout"
+        android:layout_height="match_parent"
+        tools:context="aktiviteter.LagretActivity"
+        android:theme="@style/Theme.Dugg_IN2000"
+        android:fitsSystemWindows="true">
+
+        <View
+            android:id="@+id/toolbarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbarBackgroundHeight"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:theme="@style/Theme.Dugg_IN2000_ModeColor"  />
+
+        <ImageView
+            android:id="@+id/stegBilde"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:visibility="invisible"
+            android:adjustViewBounds="true"
+            android:src="@drawable/folgsteg"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@id/ingenLagrede"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/tittel" />
+
+        <TextView
+            android:id="@+id/ingenLagrede"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="@string/ingen_lagrede"
+            android:layout_marginEnd="@dimen/margin_big"
+            android:layout_marginStart="@dimen/margin_big"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/steg1"
+            android:layout_width="@dimen/margin_medium"
+            android:visibility="invisible"
+            android:layout_marginStart="60dp"
+            android:layout_height="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:gravity="center"
+            android:background="@drawable/steg_background"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"
+            android:text="@string/steg1"
+            app:layout_constraintTop_toBottomOf="@id/ingenLagrede"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/steg2"
+            android:layout_width="@dimen/margin_medium"
+            android:visibility="invisible"
+            android:layout_marginStart="60dp"
+            android:layout_height="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:gravity="center"
+            android:background="@drawable/steg_background"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"
+            android:text="@string/steg2"
+            app:layout_constraintTop_toBottomOf="@id/steg1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/steg3"
+            android:layout_width="@dimen/margin_medium"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginStart="60dp"
+            android:layout_height="@dimen/margin_medium"
+            android:background="@drawable/steg_background"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small"
+            android:text="@string/steg3"
+            app:layout_constraintTop_toBottomOf="@id/steg2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/steg"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textColor="@color/black"
+            android:text="@string/steg"
+            android:layout_marginStart="@dimen/margin_small"
+            app:layout_constraintStart_toEndOf="@id/steg1"
+            app:layout_constraintTop_toBottomOf="@id/ingenLagrede" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@id/toolbarBackground"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="?attr/actionBarSize"
+            app:layout_constrainedHeight="true"/>
+
+        <include layout="@layout/app_bar_bottom" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

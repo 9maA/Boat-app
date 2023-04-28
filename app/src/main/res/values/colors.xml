@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="dark_gray">#272626</color>
+    <color name="ekstra_dark_gray">#1B1A1A</color>
+    <color name="grey">#FBFBFB</color>
+    <color name="textColor">#C5BEBE</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="sea_grey">#738086</color>
+    <color name ="orange">#EDAF53</color>
+    <color name ="orange_light">#EFBA6C</color>
+    <color name ="orange_light_extra">#F4D19D</color>
+    <color name="purple">#5C6BA6</color>
+    <color name="purple_dark">#4D5B8F</color>
+    <color name="purple_light">#8493CF</color>
+    <color name="cardview_farge">#E3C9A3</color>
+</resources>

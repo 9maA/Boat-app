@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_nodetat"
+    android:layout_width="match_parent"
+    android:padding="@dimen/margin_medium"
+    android:layout_margin="@dimen/margin_medium"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.Dugg_IN2000"
+    card_view:cardCornerRadius="@dimen/margin_small"
+    card_view:cardElevation="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/margin_small"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tittelNod"
+            android:textColor="@color/orange"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/symbolNod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_phone"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@id/tittelNod"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/tittel" />
+
+        <TextView
+            android:id="@+id/nrNod"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/symbolNod"
+            app:layout_constraintTop_toBottomOf="@id/tittelNod" />
+
+        <ImageView
+            android:id="@+id/klokke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_time"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@id/nrNod"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/tittel" />
+
+        <TextView
+            android:id="@+id/aapningsstid"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_medium"
+            android:layout_marginStart="@dimen/margin_big"
+            android:layout_marginEnd="@dimen/margin_big"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/klokke"
+            app:layout_constraintTop_toBottomOf="@id/nrNod" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

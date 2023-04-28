@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_hjem">
+
+    <fragment
+        android:id="@+id/nav_hjem"
+        android:name="com.ny.kystVarsel.fragmenter.hjem.HjemFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_hjem" />
+
+    <fragment
+        android:id="@+id/nav_fareSymboler"
+        android:name="com.ny.kystVarsel.fragmenter.symboler.SymbolerFragment"
+        android:label="@string/menu_fareSymboler"
+        tools:layout="@layout/fragment_symboler" />
+
+    <fragment
+        android:id="@+id/nav_nodetater"
+        android:name="com.ny.kystVarsel.fragmenter.nodetater.NodetaterFragment"
+        android:label="@string/menu_nodetater"
+        tools:layout="@layout/fragment_nodetater" />
+
+    <fragment
+        android:id="@+id/nav_lagetAv"
+        android:name="com.ny.kystVarsel.fragmenter.lagetAv.LagetAvFragment"
+        android:label="@string/menu_lagetAv"
+        tools:layout="@layout/fragment_lagetav" />
+</navigation>

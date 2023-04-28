@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ny.kystVarsel">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/boatmap"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dugg_IN2000">
+        <activity
+            android:name="com.ny.kystVarsel.splash.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ny.kystVarsel.aktiviteter.WeatherdataActivity"
+            android:theme="@style/Theme.Dugg_IN2000.NoActionBar">
+        </activity>
+        <activity android:name="com.ny.kystVarsel.aktiviteter.LagretActivity"
+            android:theme="@style/Theme.Dugg_IN2000.NoActionBar">
+        </activity>
+        <activity android:name="com.ny.kystVarsel.aktiviteter.FarerActivity"
+            android:theme="@style/Theme.Dugg_IN2000.NoActionBar">
+
+        </activity>
+        <activity android:name="com.ny.kystVarsel.aktiviteter.MainActivity"
+            android:theme="@style/Theme.Dugg_IN2000.NoActionBar">
+        </activity>
+
+        <activity android:name="com.ny.kystVarsel.aktiviteter.NotificationView"
+            android:label="Details of notification"
+            android:parentActivityName="com.ny.kystVarsel.aktiviteter.WeatherdataActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ny.kystVarsel.aktiviteter.WeatherdataActivity"/>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+    </application>
+</manifest>

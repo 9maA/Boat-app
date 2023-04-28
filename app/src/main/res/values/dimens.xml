@@ -1,0 +1,18 @@
+<resources>
+<!--    Margin størrelser-->
+    <dimen name="toolbarBackgroundHeight">100dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_big">30dp</dimen>
+
+<!--    Tekststørrelser-->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">15sp</dimen>
+    <dimen name="text_big">30sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

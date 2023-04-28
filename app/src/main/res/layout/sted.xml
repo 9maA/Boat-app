@@ -1,0 +1,136 @@
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:padding="@dimen/margin_medium"
+    android:layout_margin="@dimen/margin_medium"
+    android:theme="@style/Theme.Dugg_IN2000"
+    android:layout_height="wrap_content"
+    card_view:contentPadding="@dimen/margin_small"
+    card_view:cardCornerRadius="@dimen/margin_small"
+    card_view:cardElevation="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fareSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/margin_big"
+            android:maxHeight="@dimen/margin_big"
+            android:scaleType="fitXY"
+            android:src="@drawable/bilde15"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:contentDescription="@string/tittel" />
+
+        <TextView
+            android:id="@+id/tittelSted"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_medium"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/fareSymbol"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vindRetning"
+            android:textColor="@color/sea_grey"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_medium"
+            android:layout_width="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/fareSymbol"
+            app:layout_constraintTop_toBottomOf="@id/tittelSted"/>
+
+        <TextView
+            android:id="@+id/vindStyrke"
+            android:textColor="@color/sea_grey"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/fareSymbol"
+            app:layout_constraintTop_toBottomOf="@id/vindRetning"/>
+
+        <TextView
+            android:id="@+id/bolgeHoyde"
+            android:textColor="@color/sea_grey"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toRightOf="@id/fareSymbol"
+            app:layout_constraintTop_toBottomOf="@id/vindStyrke" />
+
+        <TextView
+            android:id="@+id/fareKlasse"
+            android:textColor="@color/orange"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toRightOf="@id/fareSymbol"
+            app:layout_constraintTop_toBottomOf="@id/bolgeHoyde"/>
+
+        <TextView
+            android:id="@+id/fareHer"
+            android:textColor="@color/purple"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:textAlignment="textStart"
+            android:visibility="invisible"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/text_medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toRightOf="@id/fareSymbol"
+            app:layout_constraintTop_toBottomOf="@id/fareKlasse"/>
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="@dimen/margin_big"
+            android:layout_height="@dimen/margin_big"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_small"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.85"
+            card_view:layout_constraintStart_toEndOf="@+id/vindRetning"
+            card_view:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/slettBilde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:scaleType="fitXY"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.828"
+                card_view:layout_constraintStart_toEndOf="@+id/vindRetning"
+                card_view:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/tittel" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

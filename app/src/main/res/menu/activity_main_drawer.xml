@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_hjem"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_fareSymboler"
+            android:icon="@drawable/ic_faresymboler"
+            android:title="@string/menu_fareSymboler" />
+        <item
+            android:id="@+id/nav_nodetater"
+            android:icon="@drawable/ic_nodetater"
+            android:title="@string/menu_nodetater" />
+
+        <item
+            android:id="@+id/nav_lagetAv"
+            android:icon="@drawable/ic_lagetav"
+            android:title="@string/menu_lagetAv" />
+
+    </group>
+</menu>
